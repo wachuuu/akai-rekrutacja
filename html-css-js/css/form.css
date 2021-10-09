@@ -147,6 +147,15 @@ label, p {
 .submit input[type="submit"]:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+.success {
+  border: 1px solid var(--success) !important;
+}
+
+.error {
+  border: 1px solid var(--error) !important;
+}
+
 /* Animacje */
 
 @keyframes rotate {

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-	<script type="text/javascript" src="js/validation.js"></script>
 	<section>
 		<img src="./assets/circle.png" alt="" class="bg-img circle" draggable="false">
 		<img src="./assets/gradient.png" alt="" class="bg-img gradient" draggable="false">
@@ -27,14 +26,24 @@
 				<h2>Dane do kontaktu</h2>
 
 				<div class="contact">
-					<label class="text-label" for="first-name">Imię</label>
-					<input type="text" id="first-name" placeholder="Twoje imię..." />
+					<div>
+						<label class="text-label" for="first-name">Imię</label>
+						<input type="text" id="first-name" placeholder="Twoje imię..." />
+						<small></small>
+					</div>
 
-					<label class="text-label" for="last-name">Nazwisko</label>
-					<input type="text" id="last-name" placeholder="Twoje nazwisko..." />
+					<div>
+						<label class="text-label" for="last-name">Nazwisko</label>
+						<input type="text" id="last-name" placeholder="Twoje nazwisko..." />
+						<small></small>
+					</div>
 
-					<label class="text-label" for="email">Email</label>
-					<input type="email" id="email" placeholder="Twój adres email..." />
+					<div>
+						<label class="text-label" for="email">Email</label>
+						<input type="email" id="email" placeholder="Twój adres email..." />
+						<small></small>
+					</div>
+
 				</div>
 
 				<h2>Sekcja</h2>
@@ -57,6 +66,7 @@
 						<label for="graphics-checkbox">Grafika</label>
 					</div>
 				</div>
+				<small id="checkbox-error"></small>
 
 				<div class="submit">
 					<input type="submit" value="Prześlij">
@@ -64,6 +74,7 @@
 			</form>
 		</div>
 	</section>
+	<script type="text/javascript" src="js/validation.js"></script>
 </body>
 
 </html>
