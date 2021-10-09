@@ -14,39 +14,53 @@
 <body>
 	<script type="text/javascript" src="js/validation.js"></script>
 	<section>
-		<div class="bg">
-			<!-- TODO: insert some background img -->
-		</div>
+		<img src="./assets/circle.png" alt="" class="bg-img circle" draggable="false">
+		<img src="./assets/gradient.png" alt="" class="bg-img gradient" draggable="false">
 
 		<div class="container">
 			<header>
 				<h1>Dołącz do nas!</h1>
-				<p>Nie czekaj i dołącz do nas już dziś!</p>
+				<p>Nie czekaj i dołącz do AKAI już dziś!</p>
 			</header>
 
 			<form method="POST">
+				<h2>Dane do kontaktu</h2>
 
-				<label for="first-name">Imię</label>
-				<input type="text" id="first-name" />
+				<div class="contact">
+					<label class="text-label" for="first-name">Imię</label>
+					<input type="text" id="first-name" placeholder="Twoje imię..." />
 
-				<label for="last-name">Nazwisko</label>
-				<input type="text" id="last-name" />
+					<label class="text-label" for="last-name">Nazwisko</label>
+					<input type="text" id="last-name" placeholder="Twoje nazwisko..." />
 
-				<label for="email">Email</label>
-				<input type="email" id="email" />
+					<label class="text-label" for="email">Email</label>
+					<input type="email" id="email" placeholder="Twój adres email..." />
+				</div>
 
-				<span>Sekcja</span>
+				<h2>Sekcja</h2>
 
-				<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
-				<label for="frontend-checkbox">Frontend</label>
-				<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
-				<label for="backend-checkbox">Backend</label>
-				<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
-				<label for="mobile-checkbox">Mobile</label>
-				<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
-				<label for="graphics-checkbox">Grafika</label>
+				<div class="sections">
+					<div>
+						<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+						<label for="frontend-checkbox">Frontend</label>
+					</div>
+					<div>
+						<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+						<label for="backend-checkbox">Backend</label>
+					</div>
+					<div>
+						<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+						<label for="mobile-checkbox">Mobile</label>
+					</div>
+					<div>
+						<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+						<label for="graphics-checkbox">Grafika</label>
+					</div>
+				</div>
 
-				<input type="submit" value="Prześlij">
+				<div class="submit">
+					<input type="submit" value="Prześlij">
+				</div>
 			</form>
 		</div>
 	</section>
