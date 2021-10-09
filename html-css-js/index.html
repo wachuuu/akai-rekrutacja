@@ -4,6 +4,9 @@
 <head>
 	<title>AKAI Frontend Task</title>
 	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,900;1,500&display=swap"
+		rel="stylesheet">
 	<meta name="viewport" charset="utf-8"
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
@@ -11,33 +14,41 @@
 <body>
 	<script type="text/javascript" src="js/validation.js"></script>
 	<section>
+		<div class="bg">
+			<!-- TODO: insert some background img -->
+		</div>
 
-		<span>Dołącz do nas!</span>
+		<div class="container">
+			<header>
+				<h1>Dołącz do nas!</h1>
+				<p>Nie czekaj i dołącz do nas już dziś!</p>
+			</header>
 
-		<form method="POST">
+			<form method="POST">
 
-			<label for="first-name">Imię</label>
-			<input type="text" id="first-name" />
+				<label for="first-name">Imię</label>
+				<input type="text" id="first-name" />
 
-			<label for="last-name">Nazwisko</label>
-			<input type="text" id="last-name" />
+				<label for="last-name">Nazwisko</label>
+				<input type="text" id="last-name" />
 
-			<label for="email">Email</label>
-			<input type="email" id="email" />
+				<label for="email">Email</label>
+				<input type="email" id="email" />
 
-			<span>Sekcja</span>
+				<span>Sekcja</span>
 
-			<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
-			<label for="frontend-checkbox">Frontend</label>
-			<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
-			<label for="backend-checkbox">Backend</label>
-			<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
-			<label for="mobile-checkbox">Mobile</label>
-			<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
-			<label for="graphics-checkbox">Grafika</label>
+				<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+				<label for="frontend-checkbox">Frontend</label>
+				<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+				<label for="backend-checkbox">Backend</label>
+				<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+				<label for="mobile-checkbox">Mobile</label>
+				<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+				<label for="graphics-checkbox">Grafika</label>
 
-			<input type="submit" value="Prześlij">
-		</form>
+				<input type="submit" value="Prześlij">
+			</form>
+		</div>
 	</section>
 </body>
 
