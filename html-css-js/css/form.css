@@ -74,6 +74,13 @@ label, p {
   display: none;  /* Safari and Chrome */
 }
 
+.complete {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .bg-img {
   position: absolute;
 }
@@ -164,6 +171,27 @@ small {
 
 .error {
   border: 1px solid var(--error) !important;
+}
+
+.go-back {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 100%;
+}
+
+.go-back button {
+  cursor: pointer;
+  height: 2.5rem;
+  padding: .2rem 1rem;
+  color: var(--accent);
+
+  border-radius: 1rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.go-back button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Animacje */

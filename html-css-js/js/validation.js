@@ -75,6 +75,6 @@ form.addEventListener("submit", (event) => {
   let isAnyCheckboxSet = validateCheckboxes(checkboxes, 'Proszę zaznaczyc co najmniej jedną sekcję')
 
   if (isFirstNameValid && isLastNameValid && isEmailValid && isAnyCheckboxSet) {
-    alert("Dziękujemy za przesłanie formularza. A tak na prawdę to nie.");
+    window.location.href = './complete.html';
   }
 });
